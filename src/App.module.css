@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.accNo{
+    color: #1e1e1e;
+    font-size: 16pt;
+    border: 1px solid #1e1e1e;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.connect{
+    font-size: 16pt;
+    background: #1e1e1e;
+    color: #dfdfdf;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

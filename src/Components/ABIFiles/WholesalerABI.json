@@ -1,0 +1,379 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_medicineContractAddress",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "wholesalerId",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "wholesalerName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "wholesalerEmailId",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "wholesalerPhone",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "role",
+				"type": "string"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "wholesalerAddress",
+				"type": "address"
+			}
+		],
+		"name": "WholesalerAdded",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "wholesalerAddress",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "bool",
+				"name": "isLoginSuccessful",
+				"type": "bool"
+			}
+		],
+		"name": "WholesalerLoginStatus",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_wholesalerName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_wholesalerEmailId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_wholesalerPhone",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_wholesalerPassword",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_role",
+				"type": "string"
+			}
+		],
+		"name": "addWholesaler",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "callGetAllOrders",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllWholesalers",
+		"outputs": [
+			{
+				"internalType": "address[]",
+				"name": "",
+				"type": "address[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getMedicineOrderById",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "MedicineId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "PharmacyId",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantity",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "status",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "ManufacturerAddresses",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "DistributerAddresses",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "WholesellerAddresses",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_wholesalerAddress",
+				"type": "address"
+			}
+		],
+		"name": "getWholesalerByAddress",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "emailId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "phone",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "password",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "role",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "wholesalerAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "bool",
+				"name": "isWholesalerLoggedIn",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_wholesalerId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_wholesalerPassword",
+				"type": "string"
+			}
+		],
+		"name": "login",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "logout",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "medicineContract",
+		"outputs": [
+			{
+				"internalType": "contract MedicineContract",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "orderId",
+				"type": "uint256"
+			}
+		],
+		"name": "updateMedicineOrderStatus",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "wholesalerAddresses",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "wholesalerCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "wholesalers",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "emailId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "phone",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "password",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "role",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "wholesalerAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "bool",
+				"name": "isWholesalerLoggedIn",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

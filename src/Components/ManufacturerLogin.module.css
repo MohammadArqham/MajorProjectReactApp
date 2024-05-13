@@ -1,0 +1,55 @@
+.SignupContainer{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    padding: 2rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 100vh; */
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input{
+    margin: 0.5rem;
+    border: none;
+    padding: 0.3rem 0.5rem;
+    background: #ededed;
+    outline: none;
+    
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.btn{
+    border: none;
+    background: rgb(75, 218, 243);
+    color: #1e1e1e;
+    padding: 0.5rem 1rem ;
+    border-radius: 5px;
+}
+.btn2{
+    background: #ededed;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-top: 2px solid rgb(75, 218, 243);
+}
+.active{
+    background: rgb(75, 218, 243);
+}
+
+.btnContainer2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}

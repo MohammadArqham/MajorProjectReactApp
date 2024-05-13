@@ -1,0 +1,35 @@
+.conatiner{
+
+}
+.viewMedicineContainer{
+    
+
+}
+.inputIdContainer{
+
+}
+
+.medicinInfoConatiner{
+    text-align: left;
+    border: 1px solid rgb(75, 218, 243);
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: block;
+}
+
+.medicinInfoConatiner span{
+    color:rgb(75, 218, 243);
+}
+
+.ProcessesOrers{
+
+}
+.btn{
+    margin: 0.5rem 0;
+    background: transparent;
+    border: none;
+    padding: 0.3rem 0.5rem;
+    border: 2px solid rgb(75, 218, 243);
+    border-radius: 5px;
+    cursor: pointer;
+}

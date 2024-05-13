@@ -1,0 +1,469 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_pharmacyName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_pharmacyEmailId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_pharmacyPhone",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_pharmacyPassword",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_role",
+				"type": "string"
+			}
+		],
+		"name": "addPharmacy",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_MedicineId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_quantity",
+				"type": "uint256"
+			}
+		],
+		"name": "callPlaceOrder",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_pharmacyId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_pharmacyPassword",
+				"type": "string"
+			}
+		],
+		"name": "login",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "logout",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_medicineContractAddress",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "pharmacyId",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "pharmacyName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "pharmacyEmailId",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "pharmacyPhone",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "role",
+				"type": "string"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "pharmacyAddress",
+				"type": "address"
+			}
+		],
+		"name": "PharmacyAdded",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "pharmacyAddress",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "bool",
+				"name": "isLoginSuccessful",
+				"type": "bool"
+			}
+		],
+		"name": "PharmacyLoginStatus",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "orderId",
+				"type": "uint256"
+			}
+		],
+		"name": "updateMedicineOrderStatus",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "callGetAllMedicineAddresses",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "callGetAllOrders",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllPharmacies",
+		"outputs": [
+			{
+				"internalType": "address[]",
+				"name": "",
+				"type": "address[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getMedicineById",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "ownerAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "medicinePrefix",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "medicineName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "medicineDescription",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "medicinePrice",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "medicineExpiryDate",
+				"type": "uint256"
+			},
+			{
+				"internalType": "enum MedicineContract.MedicineState",
+				"name": "medicineState",
+				"type": "uint8"
+			},
+			{
+				"internalType": "string",
+				"name": "manufacturerName",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getMedicineOrderById",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "MedicineId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "PharmacyId",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantity",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "status",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "ManufacturerAddresses",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "DistributerAddresses",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "WholesellerAddresses",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_pharmacyAddress",
+				"type": "address"
+			}
+		],
+		"name": "getPharmacyByAddress",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "emailId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "phone",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "password",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "role",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "pharmacyAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "bool",
+				"name": "isPharmacyLoggedIn",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "medicineContract",
+		"outputs": [
+			{
+				"internalType": "contract MedicineContract",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "pharmacies",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "emailId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "phone",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "password",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "role",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "pharmacyAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "bool",
+				"name": "isPharmacyLoggedIn",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "pharmacyAddresses",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "pharmacyCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

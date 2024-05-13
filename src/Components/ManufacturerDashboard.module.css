@@ -1,0 +1,14 @@
+.table,.table tr td,table tr th {  
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 11pt;
+}
+  
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table tr th,table tr td {
+    padding: 15px 5px;
+  }

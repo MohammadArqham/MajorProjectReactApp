@@ -1,0 +1,14 @@
+.inactive{
+    border: 2px solid rgb(110, 110, 110);
+    background: rgb(221, 221, 221);
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+.active{
+    border: 2px solid rgb(90, 236, 177);
+    background: rgb(222, 244, 235);
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+

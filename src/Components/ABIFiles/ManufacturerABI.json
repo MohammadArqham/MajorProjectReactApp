@@ -1,0 +1,484 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_manufacturerName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_manufacturerEmailId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_manufacturerPhone",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_manufacturerPassword",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_role",
+				"type": "string"
+			}
+		],
+		"name": "addManufacturer",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_medicinePrefix",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_medicineName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_medicineDescription",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_medicinePrice",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_medicineExpiryDate",
+				"type": "uint256"
+			}
+		],
+		"name": "addMedicine",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_manufacturerId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_manufacturerPassword",
+				"type": "string"
+			}
+		],
+		"name": "login",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "logout",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_medicineContractAddress",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "manufacturerId",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "manufacturerName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "manufacturerEmailId",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "manufacturerPhone",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "role",
+				"type": "string"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "manufacturerAddress",
+				"type": "address"
+			}
+		],
+		"name": "ManufacturerAdded",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "manufacturerAddress",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "bool",
+				"name": "isLoginSuccessful",
+				"type": "bool"
+			}
+		],
+		"name": "ManufacturerLoginStatus",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "orderId",
+				"type": "uint256"
+			}
+		],
+		"name": "updateMedicineOrderStatus",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "callGetAllOrders",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllManufacturers",
+		"outputs": [
+			{
+				"internalType": "address[]",
+				"name": "",
+				"type": "address[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllMedicines",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_manufacturerAddress",
+				"type": "address"
+			}
+		],
+		"name": "getManufacturerByAddress",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "emailId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "phone",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "password",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "role",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "manufacturerAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "bool",
+				"name": "isManufacturerLoggedIn",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getMedicineById",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "ownerAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "medicinePrefix",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "medicineName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "medicineDescription",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "medicinePrice",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "medicineExpiryDate",
+				"type": "uint256"
+			},
+			{
+				"internalType": "enum MedicineContract.MedicineState",
+				"name": "medicineState",
+				"type": "uint8"
+			},
+			{
+				"internalType": "string",
+				"name": "manufacturerName",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getMedicineOrderById",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "MedicineId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "PharmacyId",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantity",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "status",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "ManufacturerAddresses",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "DistributerAddresses",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "WholesellerAddresses",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "manufacturerAddresses",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "manufacturerCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "manufacturers",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "emailId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "phone",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "password",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "role",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "manufacturerAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "bool",
+				"name": "isManufacturerLoggedIn",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "medicineContract",
+		"outputs": [
+			{
+				"internalType": "contract MedicineContract",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
