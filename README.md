@@ -4,7 +4,8 @@ The global medical supply chain faces two critical challenges: drug counterfeiti
 
 # Methodology
 
-![Supply Chain Diagram](https://github.com/MohammadArqham/MajorProjectReactApp/assets/87173531/1ffbfd2f-5aad-4668-9b5d-bdb5e6d7da91)
+![image](https://github.com/MohammadArqham/MajorProjectReactApp/assets/87173531/a60bb8c4-2b79-4257-9675-cb641513bdba)
+
 
 The blockchain-based supply chain management system revolutionizes the way sensitive products, especially pharmaceuticals, are tracked and verified. Starting from the manufacturing stage, each product is assigned a QR code linked to blockchain records that document its entire journey. As products move from manufacturers to consumers, these QR codes are scanned at each step, updating the blockchain with real-time information. This ensures transparency and traceability, allowing stakeholders to verify the authenticity and history of each item. Additionally, sensor-equipped vehicles monitor environmental conditions during transit, integrating this data into the blockchain to prevent damage. This system enhances the entire supply chain by providing a secure, transparent, and reliable framework for managing and tracking products from production to delivery.
 
