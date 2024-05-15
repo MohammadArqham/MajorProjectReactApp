@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+#About this project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The global medical supply chain faces two critical challenges: drug counterfeiting and the mishandling of temperature-sensitive pharmaceuticals during transportation and storage. Counterfeit medications can harm patients and undermine the trustworthiness of the entire supply chain. Similarly, improper storage and transportation of temperature-sensitive products, such as vaccines, can render them ineffective or hazardous. These issues directly impact public health outcomes. To address these challenges, our project aims to transform the pharmaceutical supply chain by utilizing blockchain technology. Blockchain provides an immutable record of every step in a drug's journey, ensuring the authenticity of medicines. Additionally, smart contracts automate key processes, ensuring quality control and sending alerts if temperatures deviate from safe parameters. Our goal is to create a transparent, efficient, and secure system that ensures the safe and timely delivery of essential medications globally.
 
-## Available Scripts
 
-In the project directory, you can run:
+#Methodology
 
-### `npm start`
+![supply chain daigram](https://github.com/MohammadArqham/MajorProjectReactApp/assets/87173531/1ffbfd2f-5aad-4668-9b5d-bdb5e6d7da91)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The blockchain-based supply chain management system revolutionizes the way sensitive products, especially pharmaceuticals, are tracked and verified. Starting from the manufacturing stage, each product is assigned a QR code linked to blockchain records that document its entire journey. As products move from manufacturers to consumers, these QR codes are scanned at each step, updating the blockchain with real-time information. This ensures transparency and traceability, allowing stakeholders to verify the authenticity and history of each item. Additionally, sensor-equipped vehicles monitor environmental conditions during transit, integrating this data into the blockchain to prevent damage. This system enhances the entire supply chain by providing a secure, transparent, and reliable framework for managing and tracking products from production to delivery.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#Architecture 
 
-### `npm test`
+![overall_archi](https://github.com/MohammadArqham/MajorProjectReactApp/assets/87173531/cb462c06-d325-46aa-9ba4-80c0fa62e742)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The system architecture integrates the Ethereum blockchain for secure product tracking, a React.js-based front end for user interaction, and IoT devices for real-time cold chain monitoring. Ethereum’s smart contracts ensure transparent data recording, while the user-friendly front-end facilitates stakeholder engagement. IoT sensors transmit environmental data to the blockchain, enhancing real-time monitoring of the cold chain. This approach addresses drug counterfeiting and optimizes distribution by ensuring transparency, traceability, and security in the pharmaceutical supply chain. The React.js-based interface allows stakeholders to interact with real-time data, while the blockchain layer uses Ethereum's technology to securely record and verify the entire lifecycle of pharmaceutical products.
 
-### `npm run build`
+#setup guid
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Download and Extract “MajorProjectReactApp-main.zip” file
+2. Make sure node ( https://nodejs.org/en/download ) is installed in the system.
+3. Headover to the extracted folder right click and open terminal and type npm install to install all the dependencies.
+4. To run the app type npm start .
+5. Headover to https://loachost:3000/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#website live on:-
+https://mohammadarqham.github.io/MajorProjectReactApp/
+  
+  note:- 
+  1. metamask wallet required to open the website on pc.
+  2. use brave borwser in case of android devices by configuring bravewallet provided by the browser.
+  3. after opening the above link, click on connect on the metamask/brave wallet popup and refresh the page.
