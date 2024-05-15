@@ -11,7 +11,7 @@ The blockchain-based supply chain management system revolutionizes the way sensi
 
 # Architecture 
 
-![Overall Architecture](https://github.com/MohammadArqham/MajorProjectReactApp/assets/87173531/cb462c06-d325-46aa-9ba4-80c0fa62e742)
+![image](https://github.com/MohammadArqham/MajorProjectReactApp/assets/87173531/054d4ba7-5953-486c-9c62-72eddf123d6c)
 
 The system architecture integrates the Ethereum blockchain for secure product tracking, a React.js-based front end for user interaction, and IoT devices for real-time cold chain monitoring. Ethereum’s smart contracts ensure transparent data recording, while the user-friendly front-end facilitates stakeholder engagement. IoT sensors transmit environmental data to the blockchain, enhancing real-time monitoring of the cold chain. This approach addresses drug counterfeiting and optimizes distribution by ensuring transparency, traceability, and security in the pharmaceutical supply chain. The React.js-based interface allows stakeholders to interact with real-time data, while the blockchain layer uses Ethereum's technology to securely record and verify the entire lifecycle of pharmaceutical products.
 
@@ -30,3 +30,5 @@ The system architecture integrates the Ethereum blockchain for secure product tr
   1. Metamask wallet is required to open the website on a PC.
   2. Use the Brave browser on Android devices, configured with the Brave Wallet provided by the browser.
   3. After opening the above link, click on connect in the Metamask/Brave Wallet popup and refresh the page.
+
+For Blockchain solidity code click [here](https://github.com/MohammadArqham/MajorProjectSoliditycode)
